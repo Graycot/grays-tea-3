@@ -17,6 +17,8 @@ iframe {
   font-size:30px;
   color: #cccccc;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar1 iframe, .sidebar2 iframe{
@@ -36,7 +38,7 @@ p {
   font-size:26px;
   margin-bottom: 1rem;
   text-align: center;
-  
+
 }
 
 li {
@@ -44,7 +46,9 @@ li {
   margin-bottom: 1rem;
 }
 
-
+ul {
+  margin: 0 auto;
+}
 
 .main{
  min-height: 25rem;
