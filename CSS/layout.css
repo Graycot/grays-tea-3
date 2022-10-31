@@ -1,0 +1,48 @@
+
+.top {grid-area: top;}
+.sidebar1 {grid-area: sidebar1;}
+.main {grid-area: main;}
+.sidebar2 {grid-area: sidebar2;}
+.bottom {grid-area: bottom;}
+
+.layout-grid{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "top"
+  "sidebar1"
+  "main"
+  "sidebar2"
+  "bottom"
+  ;
+}
+
+/* Desktop layout */
+@media (min-width: 1150px) {
+  .layout-grid{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 3fr 8fr;
+    grid-template-areas:
+    "top top"
+    "sidebar1 main"
+    "bottom bottom"
+    ;
+  }
+}
+
+/* Ultra-wide Desktop layout */
+@media (min-width: 2100px) {
+  .layout-grid{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 2fr 8fr;
+    grid-template-areas:
+    "top top"
+    "sidebar1 main"
+    "bottom bottom"
+    ;
+  }
+}

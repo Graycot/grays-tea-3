@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin:           unset;
+    padding:          unset;
+    color:            unset;
+    text-decoration:  unset;
+    overflow-wrap: break-word;
+
+    font: inherit;
+    line-height: calc(1em + 0.5rem); 
+  } 
+
+html, body {
+  height: 100%;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: inherit;
+}
